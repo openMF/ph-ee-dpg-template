@@ -8,7 +8,8 @@ import java.util.Arrays;
 import javax.annotation.PostConstruct;
 import org.mifos.dpgatemplate.conductorsampleworkers.AddNumbersWorker;
 import org.mifos.dpgatemplate.conductorsampleworkers.SampleWorker;
-import org.springframework.beans.factory.annotation.Value;import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
@@ -22,7 +23,7 @@ public class NetflixConductorConfig {
         TaskClient taskClient = new TaskClient();
         taskClient.setRootURI(uri);
 
-//        ideally the thread count should be number of workers
+        // ideally the thread count should be number of workers
         int threadCount = 2;
 
         Worker worker1 = new SampleWorker("task_01");
