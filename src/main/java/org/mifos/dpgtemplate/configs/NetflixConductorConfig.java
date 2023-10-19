@@ -1,4 +1,4 @@
-package org.mifos.dpgatemplate.configs;
+package org.mifos.dpgtemplate.configs;
 
 import com.netflix.conductor.client.automator.TaskRunnerConfigurer;
 import com.netflix.conductor.client.http.TaskClient;
@@ -6,8 +6,8 @@ import com.netflix.conductor.client.http.WorkflowClient;
 import com.netflix.conductor.client.worker.Worker;
 import java.util.Arrays;
 import javax.annotation.PostConstruct;
-import org.mifos.dpgatemplate.conductorsampleworkers.AddNumbersWorker;
-import org.mifos.dpgatemplate.conductorsampleworkers.SampleWorker;
+import org.mifos.dpgtemplate.conductorsampleworkers.AddNumbersWorker;
+import org.mifos.dpgtemplate.conductorsampleworkers.SampleWorker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

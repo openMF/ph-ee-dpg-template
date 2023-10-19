@@ -1,4 +1,4 @@
-package org.mifos.dpgatemplate.conductorsampleworkers;
+package org.mifos.dpgtemplate.conductorsampleworkers;
 
 import com.netflix.conductor.client.worker.Worker;
 import com.netflix.conductor.common.metadata.tasks.Task;
